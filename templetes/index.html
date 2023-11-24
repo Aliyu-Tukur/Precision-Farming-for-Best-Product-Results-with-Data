@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<!-- banner -->
+<section class="banner_w3lspvt" id="home">
+	<div class="csslider infinity" id="slider1">
+	
+		<div class="banner-top">
+			<div class="overlay">
+				<div class="container">
+					<div class="w3layouts-banner-info text-center">
+						<h3 class="text-wh">Precision Farming: Crop Planting and Harvesting Recommendations</h3>
+						<h4 class="text-wh mx-auto my-4"><strong> Here are some questions we'll answer:</strong></h4>
+						<p class="text-li mx-auto mt-2">
+							1. When is the best time to plant and harvest crops in your location?<br>
+							2. What are the optimal conditions for maximum yield?<br>
+							3. How can farmers improve their crop production?<br>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //banner -->
+
+<!-- Crop Planting and Harvesting Recommendations -->
+<section class="blog py-5">
+	<div class="container py-md-5">
+		<h3 class="heading mb-sm-5 mb-4 text-center"> Aim Of The Project</h3>
+		<div class="row blog-grids">
+			<div class="col-lg-4 col-md-6 blog-middle mb-lg-0 mb-sm-5 pb-lg-0 pb-md-5">
+				<img src="{{ url_for('static', filename='images/s3.jpg') }}" class="img-fluid" alt="" />
+				<h1>Crop Planting and Harvesting Period Prediction System</h1>
+				<a href="{{ url_for('crop_recommend') }}">
+					<div class="blog-info">
+						<p class="mt-2"> Get personalized recommendations about the best time to plant and harvest crops based on local weather conditions, soil quality, and historical data.</p>
+					</div>
+				</a>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<!-- //Crop Planting and Harvesting Recommendations -->
+
+<!-- About Us -->
+<section class="core-value py-5">
+	<div class="container py-md-4">
+		<h3 class="heading mb-sm-5 mb-4 text-center"> About Us</h3>
+		<div class="row core-grids">
+			<div class="col-lg-6 core-left">
+				<img src="{{ url_for('static', filename='images/core.jpg') }}" class="img-fluid" alt="" />
+			</div>
+			<div class="col-lg-6 core-right">
+				<h3 class="mt-4">Improving Agriculture, Improving Lives, Cultivating Crops To Make Farmers Increase Profit.</h3>
+				<p class="mt-3">We leverage cutting-edge machine learning technologies to assist farmers in making informed decisions throughout the farming process. Understand your local demographics and optimize conditions for a successful and profitable yield.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //About Us -->
+
+</html>
+
+{% endblock %}
